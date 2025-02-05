@@ -103,10 +103,3 @@ We welcome contributions! If you'd like to contribute to this project, please fo
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-
-To run the project on your local machine, follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/abhi227070/Youtube-to-Study-Notes.git
