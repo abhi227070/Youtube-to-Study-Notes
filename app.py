@@ -4,9 +4,40 @@ from llm_response import llm_generator
 from fpdf import FPDF
 import time
 
-# Sidebar for API Key Input
 st.sidebar.title("🔑 API Key Setup")
+
+# Instructional text with a clickable link
+st.sidebar.markdown(
+    """
+    👉 **Don't have an API Key?**  
+    Get one from [NVIDIA AI Endpoints](https://www.nvidia.com/en-in/ai-data-science/foundation-models/)  
+    *(Sign in required)*
+    """,
+    unsafe_allow_html=True
+)
+
+# Input field for API key
 nvidia_api_key = st.sidebar.text_input("Enter your NVIDIA API Key:", type="password")
+
+if not nvidia_api_key:
+    st.sidebar.warning("Please enter your NVIDIA API Key to proceed.")
+
+# Model description (LLAMA model)
+st.sidebar.markdown(
+    """
+    ### 🔍 **About the Model**
+    We are using the **Meta LLaMA 3.1-405B** model, a **state-of-the-art large language model** developed by Meta.  
+    LLaMA (Large Language Model Meta AI) is designed to understand and generate human-like text based on context.
+    
+    - **Purpose**: Can be used for a wide range of NLP tasks, including summarization, translation, and content generation.
+    - **Size**: 405 Billion parameters.
+    - **Capabilities**: Multilingual, supports multiple languages including English, Hindi, and Hinglish.
+    
+    For more information on LLaMA, visit [Meta's LLaMA page](https://www.llama.com/)  
+    """,
+    unsafe_allow_html=True
+)
+
 
 if not nvidia_api_key:
     st.sidebar.warning("Please enter your NVIDIA API Key to proceed.")
