@@ -26,7 +26,7 @@ else:
             if available_languages:
                 selected_lang = st.selectbox("🌍 Select Subtitle Language:", available_languages.keys())
 
-                if st.button("📥 Fetch Subtitles"):
+                if st.button("📥 Generate"):
                     with st.spinner("Fetching subtitles... Please wait ⏳"):
                         time.sleep(2)  # Simulating delay
                         subtitles = get_subtitles(video_id, available_languages[selected_lang])
