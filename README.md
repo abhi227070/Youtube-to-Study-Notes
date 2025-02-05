@@ -84,7 +84,7 @@ This project is ideal for students, teachers, and anyone looking to convert **Yo
 Here is screenshot of the application:
 
 **Main Interface with Subtitle Input**:
-   ![Main Interface](images/Screenshot 2025-02-05 235516.png)
+   ![Main Interface](images/img.png)
 
 ---
 
