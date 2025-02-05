@@ -43,7 +43,7 @@ if not nvidia_api_key:
     st.sidebar.warning("Please enter your NVIDIA API Key to proceed.")
 else:
     # Main UI
-    st.title("📺 YouTube to Study Notes")
+    st.markdown("## 📺 YouTube to Study Notes using LLaMA")
 
     # YouTube Video URL Input
     video_url = st.text_input("🎥 Enter YouTube Video URL:")
